@@ -1,0 +1,53 @@
+.top_bar
+{
+	background:  #FF3000;
+	padding: 5px 0px;
+}
+.sec{
+	background: #ffffff;
+	padding: 5px 0px;
+}
+
+.social
+{
+	margin-right: 10px;
+}
+.phone
+
+{
+	color:#FFFFFF;
+}
+.menu
+{
+	margin-top: 20px;
+
+}
+.menu .navbar-default
+{
+	border: none;
+	background: none;
+}
+.menu .navbar-nav .active a , .menu .navbar-nav .active a:hover
+{
+background:#ff4500 ;
+color:   #FFFFFF;
+
+}
+.menu .navbar-nav li a:hover
+{
+	background:#ff4500 ;
+color:   #FFFFFF;
+margin: 0px 2px 0px 2px;
+
+
+}
+.menu .navbar-nav li a:hover {
+	/* padding-right: 2px;
+padding-left: 2px; */
+}
+@meadia(max-width: 1200px)
+{
+.menu .pull-right
+{
+	float: none!important;
+}
