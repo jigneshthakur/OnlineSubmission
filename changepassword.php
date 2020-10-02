@@ -25,6 +25,7 @@ if (isset($_POST['change'])) {
 		}
 		else
 		{
+			// when two password does not match proper
 			echo"<script>alert('old password and new password not match')</script>";
 		}
 	}
