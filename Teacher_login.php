@@ -3,7 +3,7 @@
 
 //session_start(); 
 
-include'handler/dbcon.php';
+include'handler/dbcon.php';//Including Database Connectivity file
 
 if (isset($_POST['login']))
 {
@@ -17,7 +17,7 @@ if (isset($_POST['login']))
 			// header('location: index.php');
 			// 		exit();
 	} else {
-		$sql="SELECT * FROM teachers WHERE username='$username' OR email='$username'";
+		$sql="SELECT * FROM teachers WHERE username='$username' OR email='$username'";//Fetching all values from teachers table
 		$result=mysqli_query($con,$sql);
 		$resultCheck=mysqli_num_rows($result);
 		if ($resultCheck<1) {
