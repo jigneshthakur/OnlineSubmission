@@ -2,7 +2,7 @@
 
 //session_start(); 
 
-include'handler/dbcon.php';
+include'handler/dbcon.php';//Importing Database Connectivity file
 
 
 
@@ -13,11 +13,11 @@ if (isset($_POST['login']))
 	$password = mysqli_real_escape_string($con, $_POST['password']);
 			//$password=md5($_POST['password']);
 	
-	$query 	= mysqli_query($con, "SELECT * FROM admin WHERE  password='$password' and username='$username'");
+	$query 	= mysqli_query($con, "SELECT * FROM admin WHERE  password='$password' and username='$username'");//Fetching data from admin table
 	$row		= mysqli_fetch_array($query);
 	$num_row 	= mysqli_num_rows($query);
 	
-	if ($num_row > 0) 
+	if ($num_row > 0) //Authenticating Username and Password
 	{			
 		$_SESSION['username']=$row['username'];
 		header('location: admin_home.php');
