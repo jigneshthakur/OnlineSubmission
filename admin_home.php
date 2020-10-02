@@ -1,11 +1,8 @@
 <?php 
-include"handler/dbcon.php";
-if (!$_SESSION['username']) {
+include"handler/dbcon.php";//Database Connectivity file
+if (!$_SESSION['username']) {//Authenticating Username
 	header('location: admin_login.php?error=you not an administrator');
-
-
 }
-
 ?>
 <!DOCTYPE html>
 <html>
